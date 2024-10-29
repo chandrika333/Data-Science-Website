@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="c:\Users\chand\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\7AEE26C309DEF8C5A2A076EB250B8F36\WhatsApp Image 2024-06-20 at 21.19.46_e2a56cea.jpg"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Analytix</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: rgb(2, 2, 39);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 50px; 
+            height: auto; 
+            margin-right: 10px; 
+            border-radius: 50%;
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+        }
+        #elements {
+            padding-left: 60px;
+            font-size: 15px;
+        }
+        #forms {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        body {
+            background-color:  rgb(2, 2, 39);
+            color:white;
+            overflow-x: hidden;
+        }
+        #hero {
+            background: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/PDaTSuJ/videoblocks-plexus-abstract-network-business-technology-science-background-loop_bj-cr7db7_thumbnail-1080_01.png') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 10px;
+            background-color: black;
+        }
+        #hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        #hero p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        #hero button {
+            background-color:rgb(86, 58, 211);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #hero button:hover {
+            background-color: rgb(234, 77, 234);
+            transform: scale(1.1);
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2, h3 {
+            text-align: center;
+            margin-bottom: 40px;
+            color:white
+           
+        }
+        h2::after, h3::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background:rgb(77, 43, 77);
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            transition: width 0.3s ease-in-out;
+        }
+        h2:hover::after, h3:hover::after {
+            width: 100%;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        .course-card {
+            background-color: rgb(69, 21, 69);
+            padding: 20px;
+            color:white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+        .course-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .course-details {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .course-details h4 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        .course-details p {
+            font-size: 1em;
+            color: white;
+        }
+        .course-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .course-details ul li {
+            margin: 10px 0;
+        }
+        .course-details button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .course-details button:hover {
+            background-color: #e55b50;
+            transform: scale(1.1);
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 5px;
+            
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #ff6f61;
+            color:black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        form button:hover {
+            background-color: #e55b50;
+            transform: scale(1.1);
+        }
+        footer {
+            background: black;
+            color:white;
+            text-align: center;
+            padding: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .company-logo{
+            color:black;
+
+        }
+        footer nav a {
+            color: #ff6f61;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        footer nav a:hover {
+            color: #e55b50;
+        }
+        footer div a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        footer div a:hover {
+            color: #ff6f61;
+        }
+        footer form {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        footer form input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        footer form button {
+            background-color: #ff6f61;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        footer form button:hover {
+            background-color: blue;
+            transform: scale(1.1);
+        }
+        #section{
+            background-color: black;
+        }
+        .course-card{
+            background-image: url("C:/Users/chand/OneDrive/Documents/background.jpg");
+            background-size: cover;
+        }
+        #courses{
+             background-color: black;
+
+        }
+        #contact{
+            background-image: url("C:/Users/chand/OneDrive/Documents/background.jpg");
+            background-size: cover;
+
+           
+            color:black
+        }
+        #newsletter{
+            color:black;
+        }
+        .card {
+            
+            background: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/PDaTSuJ/videoblocks-plexus-abstract-network-business-technology-science-background-loop_bj-cr7db7_thumbnail-1080_01.png') no-repeat center center/cover;
+            margin: 10px 0;
+        }
+        .card-body {
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .job-info {
+            flex-grow: 1;
+        }
+        .bookmark {
+            margin-left: auto;
+            color: #999;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .card{
+            color:black;
+        }
+        .trend-section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            margin-bottom: 15px;
+        }
+        .list-group-item {
+            margin-bottom: 10px;
+        }
+        #trends{
+            background: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/PDaTSuJ/videoblocks-plexus-abstract-network-business-technology-science-background-loop_bj-cr7db7_thumbnail-1080_01.png') no-repeat center center/cover;
+            color: white;
+        }
+        .section-title{
+            color: white;
+        }
+        #contact1{
+            color: white;
+        }
+        .list-group{
+            color: black;
+        }
+   
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="C:\Users\chand\OneDrive\Documents\analytix logo.jpg" alt="Logo" class="logo">
+            <div class="text-container">
+              <div class="line"><b>Analytix</b></div>
+            </div>
+        </div>
+        <div id="elements">
+            <a href="C:\Users\chand\OneDrive\Documents\front-end - online courses website\desgin\css\analytica.html">Home</a>
+            <a href="C:\html\html\ana course.html">Courses</a>
+            <a href="C:\html\html\ana article.html">Articles</a>
+            <a href="C:\html\ana job.html">Jobs</a>
+            <a href="C:\html\ana update.html">Updates</a>
+            <a href="C:\Users\chand\OneDrive\Documents\front-end - online courses website\desgin\css\ana contact.html">Contact Us</a>
+        </div>
+        <div id="forms">
+            <a href="C:\Users\chand\OneDrive\Documents\front-end - online courses website\desgin\css\ana signup.html">Sign Up</a>
+            <a href="C:\Users\chand\OneDrive\Documents\front-end - online courses website\desgin\css\ana login.html">Login</a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div id="hero">
+        <h1>Welcome to Analytix</h1>
+        <p>Your Gateway to the World of Data Science</p>
+        <button onclick="window.location.href='#courses'">Get Started Now</button>
+    </div>
+<div id="section">
+    <!-- Courses Overview -->
+    <section id="courses">
+        <h2><b>Courses</b></h2>
+        <div class="course-card">
+            <img src="C:/Users/chand/OneDrive/Documents/data science.jpg" alt="Introduction to Data Science">
+            <div class="course-details">
+                <h4>Introduction to Data Science</h4>
+                <p>Get a comprehensive introduction to the fundamentals of data science, including data analysis, visualization, and basic machine learning techniques.</p>
+                <ul>
+                    <li>Duration: 6 weeks</li>
+                    <li>Cost: Free</li>
+                    <li>Level: Beginner</li>
+                    <li>Instructor: John Doe, PhD in Data Science</li>
+                </ul>
+                <button onclick="window.location.href='#course-details'">Learn More</button>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="C:\Users\chand\OneDrive\Documents\machine learning.jpg" alt="Machine Learning A-Z">
+            <div class="course-details">
+                <h4>Machine Learning A-Z</h4>
+                <p>Dive deep into machine learning with this comprehensive course covering supervised and unsupervised learning, model evaluation, and deployment.</p>
+                <ul>
+                    <li>Duration: 10 weeks</li>
+                    <li>Cost: $299</li>
+                    <li>Level: Intermediate</li>
+                    <li>Instructor: Jane Smith, MSc in Computer Science</li>
+                </ul>
+                <button onclick="window.location.href='#course-details'">Learn More</button>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="https://th.bing.com/th/id/OIP.I0UcOOhx-iZ2iLlktMjMdAHaDt?pid=ImgDet&w=139&h=69.5&c=7&dpr=2" alt="Advanced Data Science Techniques">
+            <div class="course-details">
+                <h4>Advanced Data Science Techniques</h4>
+                <p>Master advanced data science techniques, including deep learning, natural language processing, and big data analytics.</p>
+                <ul>
+                    <li>Duration: 12 weeks</li>
+                    <li>Cost: $499</li>
+                    <li>Level: Advanced</li>
+                    <li>Instructor: Dr. Alan Turing, Expert in AI</li>
+                </ul>
+                <button onclick="window.location.href='#course-details'">Learn More</button>
+            </div>
+        </div>
+    </section>
+   
+    <div class="container">
+        <h2><b>Job Opportunities</b></h2>
+        <div class="row">
+            <!-- Job Card 1 -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="company-logo">C</div>
+                        <div class="job-info">
+                            <h5 class="card-title">Process Specialist - Voice</h5>
+                            <p class="card-text">Cognizant</p>
+                            <p class="card-text">Hyderabad, Telangana</p>
+                            <p class="card-text">Full-time</p>
+                            <small class="text-muted">4 days ago</small>
+                        </div>
+                        <div class="bookmark">🔖</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Job Card 2 -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="company-logo">R</div>
+                        <div class="job-info">
+                            <h5 class="card-title">Procurement SME</h5>
+                            <p class="card-text">Randstad</p>
+                            <p class="card-text">Hyderabad, Telangana</p>
+                            <p class="card-text">Full-time</p>
+                            <small class="text-muted">4 days ago</small>
+                        </div>
+                        <div class="bookmark">🔖</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Job Card 3 -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="company-logo">B</div>
+                        <div class="job-info">
+                            <h5 class="card-title">Technical Specialist</h5>
+                            <p class="card-text">Birlasoft Limited</p>
+                            <p class="card-text">Hyderabad, Telangana</p>
+                            <p class="card-text">Full-time</p>
+                            <small class="text-muted">4 days ago</small>
+                        </div>
+                        <div class="bookmark">🔖</div>
+                    </div>
+                </div>
+            </div>
+            <!-- More Jobs Link -->
+            <div class="col-md-12 text-center">
+                <a href="#" class="btn btn-primary">100+ more jobs</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+
+    
+
+    <section id="trends">
+    <div class="container">
+        <h1 class="text-center"><b>Current Trends in Data Science in India</b></h1>
+        
+        <div class="trend-section">
+            <h2 class="section-title">Popular Tools and Technologies</h2>
+            <p>In the rapidly evolving field of data science, certain tools and technologies have gained prominence due to their effectiveness and versatility. Below are some of the most widely used tools in India:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Python</strong>: Known for its simplicity and readability, Python is the go-to language for many data scientists due to its extensive libraries such as Pandas, NumPy, and Scikit-learn.</li>
+                <li class="list-group-item"><strong>R</strong>: A language specifically designed for statistical analysis and visualization. It is widely used in academia and research.</li>
+                <li class="list-group-item"><strong>TensorFlow</strong>: An open-source platform developed by Google for machine learning. It is widely used for building and deploying deep learning models.</li>
+                <li class="list-group-item"><strong>Keras</strong>: A high-level neural networks API, written in Python and capable of running on top of TensorFlow. It enables fast experimentation.</li>
+                <li class="list-group-item"><strong>Apache Spark</strong>: A unified analytics engine for big data processing, with built-in modules for streaming, SQL, machine learning, and graph processing.</li>
+            </ul>
+        </div>
+        
+        <div class="trend-section">
+            <h2 class="section-title">Key Techniques</h2>
+            <p>Data science encompasses a variety of techniques that are essential for extracting insights and making predictions. Here are some of the key techniques currently in focus:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Machine Learning</strong>: A subset of AI that involves training algorithms to make predictions or decisions without being explicitly programmed for the task.</li>
+                <li class="list-group-item"><strong>Deep Learning</strong>: A specialized branch of machine learning that uses neural networks with many layers (deep neural networks) to analyze various kinds of data.</li>
+                <li class="list-group-item"><strong>Natural Language Processing (NLP)</strong>: Techniques for interacting with human language, including text analysis, translation, and speech recognition.</li>
+                <li class="list-group-item"><strong>Computer Vision</strong>: A field of AI that trains computers to interpret and make decisions based on visual data from the world, such as images and videos.</                <li class="list-group-item"><strong>Data Visualization</strong>: The practice of representing data through graphical formats. Tools like Tableau and Power BI are popular for creating insightful visual representations.</li>
+            </ul>
+        </div>
+        
+        <div class="trend-section">
+            <h2 class="section-title">Emerging Job Roles</h2>
+            <p>The demand for data science professionals continues to grow, leading to the emergence of various specialized roles. Here are some of the key job roles in the data science field in India:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Data Scientist</strong>: Responsible for analyzing and interpreting complex data to help companies make decisions. They use a mix of statistics, machine learning, and domain knowledge.</li>
+                <li class="list-group-item"><strong>Machine Learning Engineer</strong>: Focuses on designing and implementing machine learning models and algorithms that can process large amounts of data and provide actionable insights.</                <li class="list-group-item"><strong>Data Analyst</strong>: Specializes in interpreting data and providing reports and visualizations to support business decision-making.</li>
+                <li class="list-group-item"><strong>AI Research Scientist</strong>: Conducts advanced research to develop new algorithms and models in artificial intelligence and machine learning.</li>
+                <li class="list-group-item"><strong>Big Data Engineer</strong>: Designs, builds, and manages the infrastructure that processes large sets of data, ensuring it is efficiently stored and accessible for analysis.</li>
+            </ul>
+        </div>
+        
+        <div class="trend-section">
+            <h2 class="section-title">Emerging Technologies</h2>
+            <p>The field of data science is continuously evolving, with new technologies emerging that promise to transform the industry. Here are some of the cutting-edge technologies making waves in data science:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>AI and ML Operations (MLOps)</strong>: A set of practices that combines machine learning, DevOps, and data engineering to deploy and maintain machine learning models in production reliably and efficiently.</li>
+                <li class="list-group-item"><strong>AutoML</strong>: Automated Machine Learning simplifies the process of applying machine learning by automating repetitive tasks and optimizing model performance.</li>
+                <li class="list-group-item"><strong>Edge Computing</strong>: Allows data processing to occur closer to the data source rather than in a centralized data center, reducing latency and bandwidth use.</li>
+                <li class="list-group-item"><strong>Quantum Computing</strong>: An emerging field that leverages the principles of quantum mechanics to perform computations at unprecedented speeds, potentially revolutionizing data analysis.</li>
+                <li class="list-group-item"><strong>Blockchain in Data Science</strong>: Utilizes blockchain technology to enhance data security, integrity, and traceability, making it a promising tool for data science applications.</li>
+            </ul>
+        </div>
+    </section>
+        
+       
+  
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <h2><b>How It Works</b></h2>
+        <ol>
+            <li><strong>Sign Up:</strong> Create your account and explore our resources.</li>
+            <li><strong>Learn:</strong> Enroll in courses and read the latest articles.</li>
+            <li><strong>Apply:</strong> Find job opportunities and apply with confidence.</li>
+        </ol>
+    </section>
+</div>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <h2 id="contact1"><b>Get in Touch</b></h2>
+        <form action="mailto:support@analytica.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <a href="#hero">Home</a> | 
+            <a href="#features">Features</a> | 
+            <a href="#how-it-works">How It Works</a> | 
+            <a href="#testimonials">Testimonials</a> | 
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <form id="newsletter">
+            <label for="newsletter-email">Subscribe to our newsletter:</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2024 Analytix. All rights reserved.</p>
+    </footer>
+</body>
+</html>
